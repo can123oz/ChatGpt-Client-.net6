@@ -5,7 +5,11 @@ C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\ChatGptCloneBackend.runtimeconfig.json
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\ChatGptCloneBackend.dll
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\ChatGptCloneBackend.pdb
+C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\OpenAI.GPT3.dll
+C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Can\source\repos\ChatGptCloneBackend\ChatGptCloneBackend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
