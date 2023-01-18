@@ -6,12 +6,12 @@ namespace ChatGptCloneBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ChatGptController : ControllerBase
+    public class OpenAIController : ControllerBase
     {
         private readonly IConfiguration _configuration;
         private readonly IOpenAIService _openAIService;
 
-        public ChatGptController(IConfiguration configuration, IOpenAIService openAIService)
+        public OpenAIController(IConfiguration configuration, IOpenAIService openAIService)
         {
             _configuration = configuration;
             _openAIService = openAIService;
@@ -29,11 +29,21 @@ namespace ChatGptCloneBackend.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("DallE")]
-        public async Task<IActionResult> DallE(string data)
+        [HttpGet("DallETypeB64")]
+        public async Task<IActionResult> DallETypeB64(string data)
         {
-            var apiKey = _configuration["ApiKeys:OpenAI"];
-            var result = await DallEHelper.Connect(_openAIService, data, apiKey);
+            var result = await DallEHelper.ImageBase64Generator(_openAIService, data);
+            if (result.status)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("DallETypeUrl")]
+        public async Task<IActionResult> DallETypeUrl(string data)
+        {
+            var result = await DallEHelper.ImageUrlGenerator(_openAIService, data);
             if (result.status)
             {
                 return Ok(result);
